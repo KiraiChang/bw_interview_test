@@ -1,0 +1,7 @@
+Q1:
+由https://www.python.org/上下載相對於os的python 安裝檔安裝即可
+	
+Q2:
+colorama==0.3.9
+py==1.6.0
+pytest==3.0.7
