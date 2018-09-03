@@ -11,10 +11,11 @@ def in_time_decorator_func(firstTime, secondTime):
             now = datetime.now()
             if now > minTime and now < maxTime:
                 print('in time!')
+            func()
         return decorate_func
     return out_decorator_func
 
-@in_time_decorator_func(firstTime=datetime(2018,8,29, 0), secondTime=datetime(2018,8,29,23))
+@in_time_decorator_func(firstTime=datetime(2018,8,29, 0), secondTime=datetime(2018,9,29,23))
 def foo():
     print('foo')
 
